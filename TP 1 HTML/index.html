@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="estructura">
+        <div>
+            <h2><b>1.Estructura basica del Documento HTML</b></h2>
+            Este documento HTML tiene una estructura basica que incluye la
+            declaracion de DOCTYPE, etiqueta de metadatos y un titulo
+        </div>
+    </section>
+    <div>
+        <h2>2. Encabezados y propiedades del texto</h2>
+        <b>Este es un texto en Negrita</b>
+        <p style="font-style: italic">Esto es un texto en cursiva</p>
+        <p style="text-decoration: underline">Esto es un texto subrayado.</p>
+    </div>
+
+    <div>
+        <h2>3. Divisiones y agrupacion de Contenido</h2>
+        <div>
+            <h3>Seccion 1</h3>
+            contenido de la primera seccion agrupada en un div.
+        </div>
+
+        <div>
+            <h3>Seccion 2</h3>
+            Contenido de la segunda seccion agrupada en un div.
+        </div>
+    </div>
+
+    <div>
+        <h2>4. Enlaces y listas</h2>
+        <h4>
+            Visita nuestro <a href="www.Hola.Com">Sitio web</a> para mas
+            informacion.
+        </h4>
+
+        <h3>Enlaces internos:</h3>
+        <ul>
+            <li><a href="#estructura">Ir a Estructura</a></li>
+            <li><a href="#multimedia">Ir a Multimedia</a></li>
+            <li><a href="#formulario">Ir a Formulario</a></li>
+        </ul>
+
+        <ul>
+            <li>Primer item de una lista desordenada</li>
+            <li>Segundo item de una lista desordenada</li>
+        </ul>
+
+        <ol>
+            <li>Primer item de una lista ordenada</li>
+            <li>Segundo item de una lista ordenada</li>
+        </ol>
+    </div>
+
+    <section id="multimedia">
+        <h2>5. Elementos multimedia</h2>
+        <img src="images.jpg" alt="Descripcion" />
+        <video controls="">
+            <source src="video.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <audio controls="">
+            <source src="audio.mp3" type="audio/mpeg" />
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <section>
+        <h2>6.Tablas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Dato1</td>
+                    <td>Dato2</td>
+                </tr>
+                <tr>
+                    <td>Dato3</td>
+                    <td>Dato4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="formulario">
+        <h2>7. Formularios</h2>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="semantica">
+        <h2>8. Semántica en HTML</h2>
+        <p>En este documento se ha respetado la semántica del HTML utilizando etiquetas.</p>
+    </section>
+</body>
+<footer>
+    Mariano Santi 2024, gracias por ver.
+</footer>
+
+</html>
