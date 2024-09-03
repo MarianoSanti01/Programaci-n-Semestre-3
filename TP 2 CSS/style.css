@@ -1,0 +1,26 @@
+section{
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.Cuadro{
+    font-size: medium;
+    border-left: 10px;
+    border-left-style: double;
+    background-color: rgb(202, 202, 202);
+}
+
+.Caja1{
+    padding-left: 1cm;
+    margin: 1px;
+    margin: black;
+}
+
+.Caja2{
+
+}
