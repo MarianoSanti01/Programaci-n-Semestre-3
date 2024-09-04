@@ -1,26 +1,122 @@
-section{
+body {
+    background-color: #e7e3bc;
+}
+
+section {
+    padding: 15px;
+    margin-bottom: 20px;
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
-h1{
-    border-style: dashed;
-    border-width: 2px;
+@media (max-width: 768px) {
+    body {
+        background-color: #d2b3db;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
-.Cuadro{
+h4 {
+    border-bottom: 1px solid;
+}
+
+.Titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(123, 124, 138);
+    padding: 15px;
+}
+
+.Cuadro {
     font-size: medium;
     border-left: 10px;
     border-left-style: double;
     background-color: rgb(202, 202, 202);
 }
 
-.Caja1{
-    padding-left: 1cm;
-    margin: 1px;
-    margin: black;
+.Caja1 {
+    padding: 15px;
+    border: 1px;
+    border-radius: 8px;
+    border-style: solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.Caja2{
+.Caja2 {
+    padding: 15px;
+    border: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    background-color: rgb(243, 243, 188);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
+.relativo {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.absoluto {
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    background-color: #ffcc00;
+    padding: 10px;
+    border: 2px solid #999;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #c2b010;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.mover {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: #34db42;
+    position: relative;
+    animation: mover 3s linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc(100% - 100px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #2ecc71;
 }
