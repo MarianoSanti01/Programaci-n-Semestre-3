@@ -30,7 +30,10 @@ async function fetchPost() {
     const postList = document.getElementById("Postlist")
     console.log(data);
 
-    const post=data[0].title;
+    const post=post.slice(0,10)
+    post.forEach(post) =>{
+        const listItem = document.createElement("li");
+    };
 
     const divElement= document.getElementById("PostList")
     divElement.innerHTML=`
