@@ -91,6 +91,8 @@
 }
 
 .sectionStore{
+    font-size: x-large;
+    font-style: oblique;
     background-color: #39b15d;
     margin: 2rem;
     padding: 2rem;
@@ -118,6 +120,12 @@
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 3);
     background-color: antiquewhite;
     border-radius: 0.4rem;
+    transition: .2s ease;
+}
+
+.containerTargetItem:hover{
+    cursor:pointer;
+    transform: scale(1.08);
 }
 
 .containerTargetItem h2{
@@ -171,6 +179,12 @@
     font-weight: 500;
     padding: 0.4rem;
     border-radius: 0.4rem;
+}
+
+.listAside ul li:hover{
+cursor:pointer;
+background-color: #39b15d;
+color: antiquewhite;
 }
 
 .liActive{
